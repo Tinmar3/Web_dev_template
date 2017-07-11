@@ -1,0 +1,27 @@
+/* non-overriding imports START */
+
+@import 'external/_reset_reloaded';
+@import 'external/_font_awesome';
+
+@import 'partials/_fonts_and_colors';
+@import 'partials/_global_parts';
+
+@import 'components/_custom_checkbox';
+@import 'components/_custom_dropdown';
+
+/* non-overriding imports END */
+
+main {
+    display: block; // IE fix
+}
+
+body {
+    font-family: $font-default;
+}
+
+/* imports for override START */
+
+@import 'partials/_media';
+@import 'partials/_media_query';
+
+/* imports for override END */
