@@ -1,4 +1,4 @@
-/* non-overriding imports START */
+// non-overriding imports START
 
 @import 'external/_reset_reloaded';
 @import 'external/_font_awesome';
@@ -9,7 +9,7 @@
 @import 'components/_custom_checkbox';
 @import 'components/_custom_dropdown';
 
-/* non-overriding imports END */
+// non-overriding imports END
 
 main {
     display: block; // IE fix
@@ -19,9 +19,12 @@ body {
     font-family: $font-default;
 }
 
-/* imports for override START */
+// imports for override START
 
 @import 'partials/_media';
 @import 'partials/_media_query';
+@import 'partials/_bootstrap_grid';
+// 'auxiliary_css': pure CSS overrides file for non-sass users
+@import '_auxiliary_css'
 
-/* imports for override END */
+// imports for override END

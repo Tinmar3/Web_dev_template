@@ -1,7 +1,8 @@
-$medium: 1400px;
+$medium: 1200px;
 $small: 992px;
 $smaller: 768px;
 $smallest: 450px;
+//
 @mixin media($breakpoint...) {
     @if(length($breakpoint)==2) {
         $minOrMax1: "";
